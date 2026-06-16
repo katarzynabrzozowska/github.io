@@ -883,4 +883,106 @@ footer nav{
     width:100%;
   }
 
+/* =========================================
+   ABOUT PAGE TIMELINE
+========================================= */
+
+.story-intro-light{
+  background:var(--paper);
+  color:var(--light-text);
+  padding:115px 6vw;
+  text-align:center;
+}
+
+.story-intro-light .section-title{
+  margin-bottom:30px;
+}
+
+.story-timeline{
+  padding:120px 6vw;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(48,42,96,.26),transparent 34%),
+    linear-gradient(180deg,#08070d 0%,#111026 100%);
+}
+
+.story-block{
+  max-width:1320px;
+  margin:0 auto 120px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7vw;
+  align-items:center;
+}
+
+.story-block:last-child{
+  margin-bottom:0;
+}
+
+.story-block.reverse .story-image{
+  order:2;
+}
+
+.story-block.reverse .story-content{
+  order:1;
+}
+
+.story-image{
+  min-height:560px;
+  border:1px solid rgba(214,189,134,.18);
+  background:#100e1f;
+  overflow:hidden;
+}
+
+.story-image img{
+  width:100%;
+  height:100%;
+  min-height:560px;
+  object-fit:cover;
+  filter:brightness(.85);
+}
+
+.story-content{
+  max-width:620px;
+}
+
+.story-content h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(42px,4vw,72px);
+  font-weight:300;
+  line-height:1.02;
+  color:#f4f0fb;
+  margin:0 0 30px;
+}
+
+.story-content p{
+  color:#cfc7da;
+}
+
+.story-quote{
+  margin-top:30px;
+  font-family:"Cormorant Garamond",serif;
+  font-style:italic;
+  font-size:1.5rem;
+  color:#bdb2d4;
+}
+
+@media(max-width:900px){
+
+  .story-block{
+    grid-template-columns:1fr;
+    gap:40px;
+    margin-bottom:80px;
+  }
+
+  .story-block.reverse .story-image,
+  .story-block.reverse .story-content{
+    order:initial;
+  }
+
+  .story-image{
+    min-height:420px;
+  }
+}
+
+
 }
