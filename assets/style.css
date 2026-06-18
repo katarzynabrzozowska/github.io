@@ -987,3 +987,215 @@ footer nav{
     font-size:48px;
   }
 }
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media(max-width: 768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .site-header{
+    height:auto;
+    padding:18px 22px;
+    flex-wrap:wrap;
+    gap:18px;
+  }
+
+  .brand{
+    font-size:14px;
+    letter-spacing:.22em;
+    width:100%;
+    text-align:center;
+  }
+
+  .site-header nav{
+    width:100%;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+
+  .site-header nav a{
+    font-size:10px;
+    letter-spacing:.22em;
+  }
+
+  .site-header .btn{
+    width:100%;
+    min-height:48px;
+    padding:14px 20px;
+    font-size:11px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:90px 22px 70px;
+  }
+
+  .hero h1{
+    font-size:52px;
+    line-height:.98;
+    margin:34px auto 20px;
+  }
+
+  .hero-copy{
+    margin:42px auto 28px;
+    font-size:15px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .btn,
+  .btn-outline,
+  .btn-dark{
+    width:100%;
+  }
+
+  .section-light,
+  .offer-section,
+  .quote,
+  .cta,
+  .membership-section,
+  .newsletter-section{
+    padding:80px 24px;
+  }
+
+  .section-title{
+    font-size:46px;
+    margin-bottom:42px;
+  }
+
+  .three,
+  .four,
+  .cards,
+  .offer-grid,
+  .membership-grid,
+  .cta,
+  .contact-page,
+  .guide,
+  .split-head{
+    grid-template-columns:1fr !important;
+  }
+
+  .cards article,
+  .offer-grid article{
+    border-right:0;
+    border-bottom:1px solid rgba(214,189,134,.18);
+    padding:38px 28px;
+  }
+
+  .guide{
+    padding:80px 24px;
+    gap:40px;
+  }
+
+  .guide-photo{
+    min-height:420px;
+  }
+
+  .guide h1,
+  .guide h2{
+    font-size:44px;
+  }
+
+  .philosophy-list{
+    margin-left:0;
+  }
+
+  .offer-grid{
+    gap:0;
+  }
+
+  .cta h2{
+    font-size:48px;
+  }
+
+  .membership-title{
+    font-size:50px;
+  }
+
+  .membership-card{
+    padding:44px 26px;
+    min-height:auto;
+  }
+
+  .newsletter-section h2{
+    font-size:44px;
+  }
+
+  .newsletter-form{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button{
+    width:100%;
+    border:1px solid rgba(255,255,255,.15);
+  }
+
+  footer{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  footer nav{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* ABOUT PAGE */
+
+  .story-timeline{
+    padding:80px 24px;
+  }
+
+  .story-block,
+  .story-block.reverse{
+    grid-template-columns:1fr;
+    gap:34px;
+    margin-bottom:80px;
+  }
+
+  .story-block.reverse .story-image,
+  .story-block.reverse .story-content{
+    order:initial;
+  }
+
+  .story-image{
+    min-height:420px;
+  }
+
+  .story-image img{
+    min-height:420px;
+  }
+
+  .story-content h3{
+    font-size:44px;
+  }
+
+  .story-content p{
+    font-size:15px;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact-page{
+    padding:80px 24px;
+  }
+
+  .contact-info h1{
+    font-size:62px;
+  }
+
+  .form-bottom{
+    flex-direction:column;
+    align-items:stretch;
+  }
+}
